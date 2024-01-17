@@ -91,5 +91,4 @@ export  const dataProduct = [
         actualPrice: 5.16,
         category:'muffin' 
     }
-
 ]
