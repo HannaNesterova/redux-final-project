@@ -1,7 +1,12 @@
 
 function Main(){
     return(
-        <div>MAIN</div>
+        <div>
+            <h1>All Delicious Products</h1>
+        <div>
+            MAIN
+            </div>
+        </div>
     )
 }
 
