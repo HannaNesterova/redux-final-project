@@ -1,16 +1,10 @@
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  }from "react-router-dom";
-  import Login from '../Login/Login';
-  import Search from '../Search/Search';
-  import Cart from '../Cart/Cart';
-  import logo from '../../logo.svg'
-  import Main from "../Main/Main";
+import { Link}from "react-router-dom";
+import logo from '../../logo.svg'
+
 
 function Header(){
+
+
     return(
         <div className="header_main">
 

@@ -1,9 +1,10 @@
-function Search(){
-    return(
-        <div>
-            SEARCH!
-        </div>
-    )
+
+function Search() {
+  
+
+  return (
+    <div></div>
+  );
 }
 
 export default Search;

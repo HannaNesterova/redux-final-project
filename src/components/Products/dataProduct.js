@@ -1,6 +1,6 @@
 export  const dataProduct = [
     {
-        id:1,
+        id:10,
         name:'Bread',
         img: 'bread',
         actualPrice: 4.70,
@@ -8,7 +8,7 @@ export  const dataProduct = [
         category:'bread' 
     },
     {
-        id:2,
+        id:6,
         name:'Bread',
         img: 'bread2',
         actualPrice: 3.30,
@@ -32,7 +32,7 @@ export  const dataProduct = [
         category:'baguette' 
     },
     {
-        id:5,
+        id:12,
         name:'Buns',
         img: 'buns1',
         actualPrice: 2.49,
@@ -40,7 +40,7 @@ export  const dataProduct = [
         category:'buns' 
     },
     {
-        id:6,
+        id:12,
         name:'Buns',
         img: 'buns2',
         actualPrice: 3.49,
@@ -57,19 +57,19 @@ export  const dataProduct = [
     {
         id:8,
         name:'Cookies',
-        img: 'cookies',
+        img: 'cookies2',
         actualPrice: 6.50,
         category:'cookies' 
     },
     {
-        id:9,
+        id:2,
         name:'Doughnut',
-        img: 'doughnut',
+        img: 'doughnut2',
         actualPrice: 2.49,
         category:'doughnut' 
     },
     {
-        id:10,
+        id:1,
         name:'Doughnut',
         img: 'doughnut',
         actualPrice: 2.99,
@@ -85,7 +85,7 @@ export  const dataProduct = [
         category:'muffin' 
     },
     {
-        id:12,
+        id:5,
         name:'Muffin',
         img: 'muffin2',
         actualPrice: 5.16,

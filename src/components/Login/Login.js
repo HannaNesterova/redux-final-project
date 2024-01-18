@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Login(){
     return(
         <div className="login_container">
@@ -11,9 +13,11 @@ function Login(){
                             <input placeholder="Password"/>
                         </form>
                         <button className="btn-log">LOGIN</button>
-    
-                </div>
+                </div>    
         </div>
+        <Link to='/main'>
+            <button className="btn-log">GO back</button>
+        </Link>
         </div>
     )
 }

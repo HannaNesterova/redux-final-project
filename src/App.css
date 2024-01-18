@@ -129,3 +129,106 @@ body{
   font-family: 'Alexandria', sans-serif;
   color: #fff9ed;
 }
+
+/* PRODUCT */
+.previusPrice{
+  text-decoration: line-through;
+}
+.product-box{
+  border: 2px #ab9873 solid;
+  max-width: 400px;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-box p{
+  text-align: center;
+  font-size: 25px;
+  color: #fff9ed;
+}
+.product-box  span{
+  color:#fff9ed ;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.product-btn{
+  background-color: #a5cdcb;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 20px;
+  transition: 1s all ease;
+}
+.product-btn:hover,
+.product-btn:active,
+.product-btn:focus{
+background-color: #ced4da;
+border-color: #75684e;
+
+}
+
+.product-price{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* PRODUCTS */
+
+.products-container{
+  margin: 15px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+.main-title{
+  text-align: center;
+  color: #fff9ed;
+  padding: 20px 0px; 
+}
+.main-filter-btn{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0px;
+}
+.main-filter-btn button{
+  background-color: #a5cdcb;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #75684e;
+  transition: 0.5s all ease;
+}
+.main-filter-btn button:hover,
+.main-filter-btn button:active 
+.main-filter-btn button:focus {
+  text-decoration: underline;
+  text-decoration-color: #ced4da;
+  text-underline-offset: 4px; 
+  text-decoration-skip-ink: none;
+  outline: none; 
+  color: #ced4da;
+  font-weight: bold;
+}
+
+
+/* SEARCH */
+
+.src-btn{
+    border-color: #a5cdcb;
+    color: #a5cdcb;
+    font-size: 16px;
+    background-color: #ab9873;
+  
+}
