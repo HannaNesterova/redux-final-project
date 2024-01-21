@@ -10,7 +10,7 @@ function Filter({ category }) {
         <div>
             <div className='filter-selected'>
                 <Form.Select onChange={(e) => dispatch(filterCategory(e.target.value))}>
-                    <option>What do you prefer?</option>
+                    <option value="all">What do you prefer?</option>
                     <option value="sweet">Sweet</option>
                     <option value="sold">Sold</option>
                     <option value="all">All</option>
