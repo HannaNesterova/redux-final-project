@@ -7,7 +7,7 @@ function Main(){
     return(
         <div>
             <h1 className="main-title">All Delicious Products</h1>
-            {['sweet, sold, all'].map((category, index) => <Filter key={index} category ={category}/>)}
+            {['sweet, salt, all'].map((category, index) => <Filter key={index} category ={category}/>)}
    
         <div>
             <Products />

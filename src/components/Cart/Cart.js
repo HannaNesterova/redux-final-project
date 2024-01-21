@@ -1,7 +1,13 @@
+
+import CartItems from "./CartItems";
+
 function Cart(){
     return(
         <div>
-            CART!
+        <div>
+            {/* {'cart is empty!'} className='empty-cart' */}
+            <CartItems />
+        </div>
         </div>
     )
 }

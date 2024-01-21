@@ -1,6 +1,8 @@
 
 
+
 function ProductDetails({product, closeDetails}){
+
     return(
         <div className="productDetailsCont">
                 <img src={`./${product.img01}.jpeg`} width='250px' height='180px' alt="img" className="productDetailPic"/>

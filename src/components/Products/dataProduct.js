@@ -6,7 +6,7 @@ export  const dataProduct = [
         img01:'bread-2',
         actualPrice: 4.70,
         pastPrice:'$ 5.27',
-        category:'sold',
+        category:'salt',
         description:'Mollitia hic dicta qui quod labore. Aspernatur adipisci non.Aperiam architecto ipsam neque fugiat dolorum aut ut eveniet dolorem.Facere beatae occaecati aut. Illum aut quidem laboriosam ut totam ut'
     },
     {
@@ -16,7 +16,7 @@ export  const dataProduct = [
         img01:'bread-1',
         actualPrice: 3.30,
         pastPrice:'$ 4.27',
-        category:'sold' ,
+        category:'salt' ,
         description:'Mollitia hic dicta qui quod labore. Aspernatur adipisci non.Aperiam architecto ipsam neque fugiat dolorum aut ut eveniet dolorem.Facere beatae occaecati aut. Illum aut quidem laboriosam ut totam ut'
     },
     {
@@ -26,7 +26,7 @@ export  const dataProduct = [
         img01:'baguette-1',
         actualPrice: 2.99,
         pastPrice:'$ 4.29',
-        category:'sold',
+        category:'salt',
         description:'Mollitia hic dicta qui quod labore. Aspernatur adipisci non.Aperiam architecto ipsam neque fugiat dolorum aut ut eveniet dolorem.Facere beatae occaecati aut. Illum aut quidem laboriosam ut totam ut'
     },
     {
@@ -36,7 +36,7 @@ export  const dataProduct = [
         img01:'baguette-2',
         actualPrice: 3.49,
         pastPrice: '$ 4.29',
-        category:'sold',
+        category:'salt',
         description:'Mollitia hic dicta qui quod labore. Aspernatur adipisci non.Aperiam architecto ipsam neque fugiat dolorum aut ut eveniet dolorem.Facere beatae occaecati aut. Illum aut quidem laboriosam ut totam ut'
     },
     {
@@ -46,7 +46,7 @@ export  const dataProduct = [
         img01:'buns-1',
         actualPrice: 2.49,
         pastPrice:'$ 3.70',
-        category:'sold',
+        category:'salt',
         description:'Mollitia hic dicta qui quod labore. Aspernatur adipisci non.Aperiam architecto ipsam neque fugiat dolorum aut ut eveniet dolorem.Facere beatae occaecati aut. Illum aut quidem laboriosam ut totam ut'
     },
     {

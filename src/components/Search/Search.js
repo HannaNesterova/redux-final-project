@@ -10,6 +10,10 @@ function Search() {
     const handleSearch = () => {
         dispatch(setSearchQuery(searchQuery));
         setSearchQueryLocal('');
+
+        if(searchQuery !== dispatch){
+            return 'try'
+        }
     };
 
     return (
