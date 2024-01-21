@@ -1,7 +1,7 @@
 // Filter.js
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Form from 'react-bootstrap/Form'; 
-import { filterCategory, getSelectedCategory } from "../../redux/searchSlice";
+import { filterCategory } from "../../redux/filterSlice";
 
 function Filter({ category }) {
     const dispatch = useDispatch();

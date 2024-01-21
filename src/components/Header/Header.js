@@ -2,11 +2,15 @@ import { useState } from "react";
 import {Link}from "react-router-dom";
 import logo from '../../logo.svg'
 import Search from "../Search/Search";
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchQuery, getSearchQuery } from '../../redux/filterSlice';
+
 
 
 
 function Header(){
-
+const dispatch = useDispatch();
+const searchQuery = useSelector(getSearchQuery);
 const [search, setSearch] = useState(false);
 
     return(
