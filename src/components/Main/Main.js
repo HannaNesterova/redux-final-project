@@ -1,17 +1,14 @@
+
 import Products from "../Products/Products";
+import Filter from '../Search/Filter';
 
 function Main(){
+    
     return(
         <div>
             <h1 className="main-title">All Delicious Products</h1>
-            <div className="main-filter-btn">
-                <button>bread</button>
-                <button>baguette</button>
-                <button>buns</button>
-                <button>cookies</button>
-                <button>doughnut</button>
-                <button>muffin</button>
-            </div>
+            {['sweet, sold, all'].map((category, index) => <Filter key={index} category ={category}/>)}
+   
         <div>
             <Products />
         </div>
