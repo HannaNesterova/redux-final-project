@@ -23,7 +23,8 @@ body{
 .header_main{
   background-color: #ab9873 ;
   padding: 10px 0px;
-  height: 160px;
+  height: 100%;
+  min-height: 160px;
 }
 .logo-container{
   display: flex;
@@ -102,7 +103,7 @@ body{
   width: 120px;
   background-color:#a5cdcb;
   height: 38px;
-  margin-top: 30px;
+  margin: 30px 50px;
   border-radius: 10px;
   outline: none;
   transition: 1s all ease;
@@ -341,6 +342,7 @@ transition: opacity 1s ease;
 
 .search.active{
   opacity: 1;
+  margin-top: 20px;
 }
 
 /* MAIN */
@@ -378,13 +380,221 @@ border: 2px solid #b6effb;
 border-radius: 5px;
 background-color: #cff4fc;
 color: #055160;
+margin: 30px 100px;
+padding: 30px;
 }
 .total-price{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 100px;
+  color: #fff9ed;
+  font-size: 30px;
 }
 .total-price p{
   color:white;
   font-size: 24px;
+}
+
+.cart-icon-quantity{
+  position: relative;
+}
+
+.cart-icon-quantity::after {
+  background: #fff9ed;
+  border-radius: 50%;
+  border:3px solid #ab9873;
+  color: #ab9873;
+  content: attr(data-count);
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
+  padding: 0.3em 0.6em 0.6em;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+
+
+/* BURGER */
+
+.burger-box {
+ opacity: 0;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+
+@media all and (max-width: 820px) {
+  .burger-box {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    right: 20px; 
+    cursor: pointer;
+  }
+
+  .burger-box span:nth-child(1),
+  .burger-box span:nth-child(2),
+  .burger-box span:nth-child(3) {
+    right: 10px;
+  }
+
+  .burger-box span:nth-child(1) {
+    top: 0;
+  }
+
+  .burger-box span:nth-child(2) {
+    top: 10px;
+    transform: translateY(-50%);
+  }
+
+  .burger-box span:nth-child(3) {
+    bottom: 5px;
+  }
+
+  .burger-box span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: wheat;
+    transition: all 0.3s ease;
+  }
+
+  .burger-box.active {
+    left: 0; /* Add this line */
+  }
+
+  .burger-box.active span:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+
+  .burger-box.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-box.active span:nth-child(3) {
+    transform: rotate(45deg);
+    bottom: -4px;
+  }
+
+  .header_icons {
+    display: none;
+  }
+
+  .mobile-links {
+    display: flex;
+    position: absolute;
+    top: 171px;
+    left: 82px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .mobile-links span {
+    background-color: #a5cdcb;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s all ease;
+  }
+
+  .header_container {
+    flex-direction: column;
+    min-height: 208px;
+    height: 100%;
+  }
+  .search{
+    position: static;
+  }
+  .product-box{
+    max-width: 310px;
+    width: 100%;
+    height: 510px;
+  }
+  .product-box img{
+    width: 310px;
+    height: 270px;
+  }
+  .product-buttons {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .logo-title h1{
+    font-size: 35px;
+  }
+  .logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 95px;
+}
+.src-btn{
+  width: 70px;
+  margin-top: 10px;
+}
+.mobile-links{
+  flex-wrap: wrap;
+  top: 180px;
+}
+.product-box{
+  max-width: 440px;
+  width: 100%;
+  height: 510px;
+}
+.product-box img{
+  width: 440px;
+  height: 270px;
+}
+}
+
+@media all and (max-width: 450px){
+  .logo-title h1 {
+    font-size: 30px;
+  }
+  .logo-title p{
+    font-size: 20px;
+  }
+  .product-box img{
+    width: 399px;
+  }
+  .product-box{
+    max-width: 399px;
+    width: 100%;
+    height: 510px;
+  }
+  .products-container{
+    margin: 0px 25px;
+  }
+  .product-buttons{
+    flex-wrap: wrap;
+    padding: 0px 10px;
+  }
+  .item-box-container{
+    flex-direction: column-reverse;
+  }
+  .total-price{
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 415px){
+  .product-box img{
+    width: 345px;
+  }
+  .product-box{
+    max-width: 345px;
+    width: 100%;
+  }
 }

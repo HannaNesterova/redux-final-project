@@ -8,9 +8,9 @@ function Login(){
                     <h2>Login</h2>
                         <form>
                             <p>Email</p>
-                            <input placeholder="Email"/>
+                            <input placeholder="Email" required={true}/>
                             <p>Password</p>
-                            <input placeholder="Password"/>
+                            <input placeholder="Password" required={true}/>
                         </form>
                         <button className="btn-log">LOGIN</button>
                 </div>    
