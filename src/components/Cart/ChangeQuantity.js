@@ -2,15 +2,16 @@
 function ChangeQuantity({quantity, setQuantity}){
 
 const addQuantity = () => {
-    const newQuantity = quantity ++;
+    const newQuantity = quantity++;
     setQuantity(newQuantity);
 }
 
 const removeQuantity =() => {
-    if(quantity <= 1 )return;
-    const newQuantity = quantity --;
-    setQuantity(newQuantity);
-}
+    if (quantity > 1) {
+        const newQuantity = --quantity;
+        setQuantity(newQuantity);
+    }
+} 
 
     return(
         <div>

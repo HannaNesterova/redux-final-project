@@ -15,7 +15,6 @@ export const cartSlice = createSlice({
                 quantity:action.payload.quantity,
                 img: action.payload.product.img,
                 totalPrice: action.payload.quantity * action.payload.product.actualPrice,
-                cartItemQuantity: action.payload.quantity + action.payload.quantity,
             })
         },
         removeItemFromCart:(state, action) => {

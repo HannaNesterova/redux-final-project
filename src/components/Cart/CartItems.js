@@ -3,7 +3,6 @@ import {dataProduct} from '../Products/dataProduct';
 import { removeItemFromCart } from '../../redux/cartSlice';
 
 function CartItems({product}) {
-    console.log(product)
 
     const dispatch = useDispatch();
     const item = dataProduct.find(item => item.id === product.productId);
