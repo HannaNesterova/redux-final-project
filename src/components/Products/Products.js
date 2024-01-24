@@ -22,8 +22,8 @@ function Products() {
 
     return (
         <div className="products-container">
-            {filteredProducts.map((product, id) => (
-                <Product key={id} product={product} />
+            {filteredProducts.map((product) => (
+                <Product key={product.id} product={product} />
             ))}
         </div>
     );

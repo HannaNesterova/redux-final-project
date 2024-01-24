@@ -18,8 +18,8 @@ function Cart() {
         </div>
       ) : (
         <div>
-          {cartItems.map((product, index) => (
-            <CartItems key={index} product={product} />
+          {cartItems.map((product) => (
+            <CartItems key={product.id} product={product} />
           ))}
           <div className="total-price">
             <h3>Total:</h3>

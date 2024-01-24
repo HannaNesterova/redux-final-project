@@ -1,13 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 
 function ProductDetails({product, closeDetails}){
 
+  const detailsContainerRef = useRef();
+  console.log(detailsContainerRef)
+
     useEffect(() => {
         const handleClickOutside = (event) => {
-          const detailsContainer = document.querySelector(".productDetailsCont");
+          
     
-          if (detailsContainer && !detailsContainer.contains(event.target)) {
+          if (detailsContainerRef.current && !detailsContainerRef.current.contains(event.target)) {
             closeDetails();
           }
         };
@@ -16,10 +19,10 @@ function ProductDetails({product, closeDetails}){
         return () => {
           document.removeEventListener("mousedown", handleClickOutside);
         };
-      }, [closeDetails]);
+      }, [closeDetails]); 
 
     return(
-        <div className="productDetailsCont ">
+        <div className="productDetailsCont " ref={detailsContainerRef}>
                 <img src={`./${product.img01}.jpeg`} width='250px' height='180px' alt="img" className="productDetailPic"/>
                 <span className="detailClose" onClick={closeDetails}>
                     &times;
