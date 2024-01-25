@@ -2,8 +2,7 @@ import { useState } from "react";
 import {Link}from "react-router-dom";
 import logo from '../../logo.svg'
 import Search from "../Search/Search";
-import { useDispatch, useSelector } from 'react-redux';
-import { getSearchQuery } from '../../redux/filterSlice';
+import { useSelector } from 'react-redux';
 import { getCartItems } from "../../redux/cartSlice";
 
 
