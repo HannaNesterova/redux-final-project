@@ -10,8 +10,6 @@ import { getCartItems } from "../../redux/cartSlice";
 
 
 function Header(){
-const dispatch = useDispatch();
-const searchQuery = useSelector(getSearchQuery);
 const [search, setSearch] = useState(false);
 const [burger, setBurger] = useState(false);
 const cartItemCount = useSelector(getCartItems);
